@@ -6,30 +6,33 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 11:47:42 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/05/09 19:07:56 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/05/11 12:38:08 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <bsd/string.h>
+#include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	size_t i;
+	size_t	i;
+	size_t	len;
 
+	len = 0;
 	i = 0;
-	while (src[i] && i < (size -1))
-	{
-		dest[i] = src[i];
-		i++;
+	if (size > 0)
+	{	
+		while (src[len] && len < (size -1))
+		{
+			dest[len] = src[len];
+			len++;
+		}
+		dest[len] = '\0';
 	}
-	dest[i] = '\0';
-	i = 0;
 	while (src[i])
 		i++;
 	return (i);
 }
-
+/*
 int main()
 {
 	char dest[20];
@@ -42,4 +45,4 @@ int main()
 	printf("mine: %zu\n", ft_strlcpy(dest, src, size));
 	printf("orig: %zu\n", strlcpy(dest, src, size));
 	return (0);
-}
+}*/

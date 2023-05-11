@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/05 11:58:08 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/05/11 13:27:00 by chbuerge         ###   ########.fr       */
+/*   Created: 2023/05/11 12:39:16 by chbuerge          #+#    #+#             */
+/*   Updated: 2023/05/11 13:25:23 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stdio.h>
+#include <string.h>
+/*
 #include "libft.h"
 
-int	ft_toupper(int c)
+size_t ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	if (c >= 'a' && c <= 'z')
-		c = c - 32;
-	return (c);
-}
-/*
+
+	return ();
+}*/
+
 int main()
 {
-	printf("%d\n", ft_toupper('h'));
-	return (0);
-}*/
+	char first[] = "hello ";
+	char last[] = "world, it's thursday.";
+	int r;
+	int size = 10;
+	char buffer[size];
+
+	
+
+
+}
