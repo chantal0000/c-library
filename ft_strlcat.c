@@ -6,9 +6,10 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 12:39:16 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/05/11 13:25:23 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/05/12 11:27:24 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
 #include <stdio.h>
 #include <string.h>
 /*
@@ -18,7 +19,7 @@ size_t ft_strlcpy(char *dest, const char *src, size_t size)
 {
 
 	return ();
-}*/
+}
 
 int main()
 {
@@ -31,4 +32,4 @@ int main()
 	
 
 
-}
+}*/

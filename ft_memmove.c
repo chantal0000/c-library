@@ -6,14 +6,14 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 17:26:21 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/05/11 10:18:55 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/05/12 11:27:52 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 #include "libft.h"
 
 void *ft_memmove(void *dest, const void *src, size_t n)
 {
 
 	return (dest);
-}
+}*/

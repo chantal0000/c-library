@@ -6,7 +6,7 @@
 #    By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/10 10:34:54 by chbuerge          #+#    #+#              #
-#    Updated: 2023/05/11 13:33:38 by chbuerge         ###   ########.fr        #
+#    Updated: 2023/05/12 11:37:14 by chbuerge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ SRCS	 = 		ft_isalpha.c \
 				ft_strlcpy.c \
 				ft_toupper.c \
 				ft_tolower.c \
-				ft_strncmp.c
+				ft_strncmp.c \
+				ft_atoi.c \
+				ft_putchar_fd.c
 
 OBJS	 = ${SRCS:.c=.o}
 
