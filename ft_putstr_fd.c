@@ -6,7 +6,7 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 13:32:16 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/05/12 13:40:04 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/05/15 16:49:55 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if(s != NULL)
+	if (s != NULL)
 	{
 		while (s[i])
 		{
