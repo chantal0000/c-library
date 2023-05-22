@@ -6,7 +6,7 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 13:00:45 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/05/19 16:43:14 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/05/22 10:50:14 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdlib.h>
 
 /*PART 1*/
+int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
@@ -43,6 +44,7 @@ char	*ft_strdup(const char *s);
 /*PART 2 */
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strtrim(char const *s1, char const *set);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 #endif
