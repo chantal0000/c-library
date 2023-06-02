@@ -49,7 +49,8 @@ SRCS	 = 		ft_isalpha.c \
 				ft_putstr_fd.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c \
-				ft_lstnew.c \
+				
+SRCSB 	= 		ft_lstnew.c \
 				ft_lstadd_front.c \
 				ft_lstsize.c \
 				ft_lstlast.c \
@@ -57,24 +58,31 @@ SRCS	 = 		ft_isalpha.c \
 				ft_lstdelone.c \
 				ft_lstclear.c \
 				ft_lstiter.c \
-				ft_lstmap.c
+				ft_lstmap.c \
 
 OBJS	 = ${SRCS:.c=.o}
+
+OBJSB	= ${SRCSB:.c=.o}
 
 all:		${NAME}
 
 ${NAME}:	${OBJS}
 					ar rcs ${NAME} ${OBJS}
 
-.c.o:		${CC} ${CFLAGS} -c $< -o $@
+#.c.o:		${CC} ${CFLAGS} -c $< -o $@
 
 clean:				
-	rm -f ${OBJS}
+	rm -f ${OBJS} ${OBJSB}
 
 fclean:	clean
 	rm -f ${NAME}
 
+bonus: ${OBJSB}
+		ar rcs ${NAME} ${OBJSB}
+
 re:	fclean all
 
-.PHONY:	all clean fclean re
+
+
+.PHONY: all clean fclean re bonus
 

@@ -6,7 +6,7 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 17:21:25 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/06/02 10:58:25 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/06/02 13:17:30 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Takes as a parameter a node and frees the memory of
@@ -18,10 +18,8 @@ as a parameter and free the node. The memory of
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (lst != NULL)
-	{
-		if (del != NULL && lst->content != NULL)
-			(del)(lst->content);
-		lst = NULL;
-	}
+	if (lst == NULL || del == NULL)
+		return ;
+	del(lst->content);
+	free(lst);
 }

@@ -6,7 +6,7 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 10:20:38 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/06/02 10:58:08 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/06/02 13:20:15 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*Deletes and frees the given node and every
