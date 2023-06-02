@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/01 17:21:25 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/06/02 10:58:25 by chbuerge         ###   ########.fr       */
+/*   Created: 2023/06/02 10:20:38 by chbuerge          #+#    #+#             */
+/*   Updated: 2023/06/02 10:58:08 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Takes as a parameter a node and frees the memory of
-the node’s content using the function ’del’ given
-as a parameter and free the node. The memory of
-’next’ must not be freed.*/
+/*Deletes and frees the given node and every
+successor of that node, using the function ’del’
+and free(3).
+Finally, the pointer to the list must be set to
+NULL.*/
 
 #include "libft.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	if (lst != NULL)
+	t_list	*new;
+
+	if (lst)
 	{
-		if (del != NULL && lst->content != NULL)
-			(del)(lst->content);
-		lst = NULL;
+		while (*lst)
+		{
+			new = (*lst)->next;
+			ft_lstdelone(*lst, del);
+			(*lst) = new;
+		}
 	}
 }

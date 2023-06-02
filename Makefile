@@ -6,7 +6,7 @@
 #    By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/10 10:34:54 by chbuerge          #+#    #+#              #
-#    Updated: 2023/06/01 14:49:58 by chbuerge         ###   ########.fr        #
+#    Updated: 2023/06/02 10:45:58 by chbuerge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,13 @@ SRCS	 = 		ft_isalpha.c \
 				ft_putnbr_fd.c \
 				ft_lstnew.c \
 				ft_lstadd_front.c \
-				ft_lstsize.c
+				ft_lstsize.c \
+				ft_lstlast.c \
+				ft_lstadd_back.c \
+				ft_lstdelone.c \
+				ft_lstclear.c \
+				ft_lstiter.c \
+				ft_lstmap.c
 
 OBJS	 = ${SRCS:.c=.o}
 
