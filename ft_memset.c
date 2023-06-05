@@ -6,9 +6,13 @@
 /*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/05 11:15:41 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/05/10 16:09:32 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/06/05 11:03:39 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/*
+The memset() copies c into each of the n 
+first bytes of the object pointed to by s.
+*/
 
 #include "libft.h"
 

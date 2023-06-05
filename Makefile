@@ -69,8 +69,6 @@ all:		${NAME}
 ${NAME}:	${OBJS}
 					ar rcs ${NAME} ${OBJS}
 
-#.c.o:		${CC} ${CFLAGS} -c $< -o $@
-
 clean:				
 	rm -f ${OBJS} ${OBJSB}
 

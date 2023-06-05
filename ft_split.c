@@ -3,20 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/01 14:55:56 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/06/01 16:48:03 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/06/02 15:28:20 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-/*Allocates (with malloc(3)) and returns an array
-of strings obtained by splitting ’s’ using the
+/*
 character ’c’ as a delimiter. The array must end
 with a NULL pointer.*/
 
 #include "libft.h"
 
-/*count the number of words of a string by using a 
+/*count the number of words of a string by using a
 specified delimiter character 'c'*/
 
 int	count_words(const char *str, char c)
@@ -26,6 +25,8 @@ int	count_words(const char *str, char c)
 
 	result = 0;
 	setting = 0;
+	if (str == NULL)
+		return (0);
 	while (*str)
 	{
 		if (*str != c && setting == 0)
@@ -94,19 +95,19 @@ char	**ft_split(char const *s, char c)
 int main(void) {
     char const *s = "Hello,World,Split,Example";
     char **result = ft_split(s, ',');
-    
+
     if (result == NULL) {
         printf("Error: Failed to split the string.\n");
         return 1;
     }
-    
+
     // Print the split strings
     int i = 0;
     while (result[i] != NULL) {
         printf("%s\n", result[i]);
         i++;
     }
-    
+
     // Free the memory allocated by ft_split
     i = 0;
     while (result[i] != NULL) {
@@ -114,6 +115,6 @@ int main(void) {
         i++;
     }
     free(result);
-    
+
     return 0;
 } */
