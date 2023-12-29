@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/10 10:34:54 by chbuerge          #+#    #+#              #
-#    Updated: 2023/06/02 10:45:58 by chbuerge         ###   ########.fr        #
+#    Updated: 2023/12/29 17:14:03 by chbuerge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,9 @@ SRCS	 = 		ft_isalpha.c \
 				ft_putstr_fd.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c \
-				
+				get_next_line/get_next_line.c \
+				get_next_line/get_next_line_utils.c
+
 SRCSB 	= 		ft_lstnew.c \
 				ft_lstadd_front.c \
 				ft_lstsize.c \
@@ -69,7 +71,7 @@ all:		${NAME}
 ${NAME}:	${OBJS}
 					ar rcs ${NAME} ${OBJS}
 
-clean:				
+clean:
 	rm -f ${OBJS} ${OBJSB}
 
 fclean:	clean

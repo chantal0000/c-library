@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 13:00:45 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/06/02 10:59:10 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/12/29 17:16:31 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <unistd.h>
 /* malloc */
 # include <stdlib.h>
+
+/*define the required constant BUFFER_SIZE -> gnl */
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1000
+# endif
 
 typedef struct s_list
 {
@@ -68,4 +73,10 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+// GET_NEXT_LINE
+char	*ft_strjoin_gnl(char *s1, char *s2);
+char	*ft_extract_line(char *stash);
+char	*ft_remove_extracted_line_from_stash(char *stash);
+char	*ft_read(int fd, char *str);
+char	*get_next_line(int fd);
 #endif

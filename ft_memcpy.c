@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chbuerge <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 15:46:27 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/06/05 10:25:12 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/06/05 11:26:40 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
-The memcpy() function shall copy the first n bytes 
-pointed to by src to the buffer pointed to by dest. 
+The memcpy() function shall copy the first n bytes
+pointed to by src to the buffer pointed to by dest.
 Source and destination may not overlap.
 */
 
@@ -44,10 +44,10 @@ int main(void)
     char dest[20];
 	char dest1[20];
 
-    
+
     ft_memcpy(dest, src, 6);
 
-   
+
     printf("dest = %s\n", dest);
 	printf("dest1 org = %s\n", memcpy(dest1, "Hello, world!", 6));
     return 0;
