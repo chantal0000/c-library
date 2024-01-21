@@ -6,7 +6,7 @@
 /*   By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 14:08:25 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/12/29 17:15:42 by chbuerge         ###   ########.fr       */
+/*   Updated: 2023/12/29 17:54:09 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ NULL: there is nothing else to read, or an error
 */
 
 /*test main function*/
-
+/*
 #include <stdio.h>
 #include <fcntl.h>
 int main(void)
@@ -146,3 +146,4 @@ int main(void)
 	}
 	return (0);
 }
+*/

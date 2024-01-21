@@ -6,7 +6,7 @@
 /*   By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 13:00:45 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/12/29 17:16:31 by chbuerge         ###   ########.fr       */
+/*   Updated: 2024/01/15 16:20:34 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 /* malloc */
 # include <stdlib.h>
+# include <stdarg.h>
 
 /*define the required constant BUFFER_SIZE -> gnl */
 # ifndef BUFFER_SIZE
@@ -44,6 +45,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+int		ft_strcmp(char *s1, char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -79,4 +81,18 @@ char	*ft_extract_line(char *stash);
 char	*ft_remove_extracted_line_from_stash(char *stash);
 char	*ft_read(int fd, char *str);
 char	*get_next_line(int fd);
+// FT_PRINTF
+/* ft_printf.c */
+int		ft_eval_specifier(va_list args, const char specifier);
+int		ft_printf(const char *format, ...);
+
+/* ft_printf_utils.c */
+int		ft_print_char(char c);
+int		ft_print_str(char *s);
+int		ft_print_nbr(int nb);
+void	ft_putnbr_u(unsigned int n);
+size_t	ft_print_u_nbr(unsigned int nb);
+int		ft_print_hex(unsigned long int nb, const char format);
+int		ft_print_p(unsigned long long ptr);
+
 #endif

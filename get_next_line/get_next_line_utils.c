@@ -6,7 +6,7 @@
 /*   By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 14:15:47 by chbuerge          #+#    #+#             */
-/*   Updated: 2023/12/29 17:15:18 by chbuerge         ###   ########.fr       */
+/*   Updated: 2024/01/15 16:23:27 by chbuerge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ char	*ft_strjoin_gnl(char *s1, char *s2)
 	result[i + j] = '\0';
 	return (result);
 }
-
 
 /*
 extracts a single line incl newline char

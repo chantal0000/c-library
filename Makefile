@@ -6,7 +6,7 @@
 #    By: chbuerge <chbuerge@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/10 10:34:54 by chbuerge          #+#    #+#              #
-#    Updated: 2023/12/29 17:14:03 by chbuerge         ###   ########.fr        #
+#    Updated: 2024/01/15 10:37:25 by chbuerge         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRCS	 = 		ft_isalpha.c \
 				ft_strchr.c \
 				ft_strrchr.c \
 				ft_strncmp.c \
+				ft_strcmp.c \
 				ft_memchr.c \
 				ft_memcmp.c \
 				ft_strnstr.c \
@@ -50,7 +51,11 @@ SRCS	 = 		ft_isalpha.c \
 				ft_putendl_fd.c \
 				ft_putnbr_fd.c \
 				get_next_line/get_next_line.c \
-				get_next_line/get_next_line_utils.c
+				get_next_line/get_next_line_utils.c \
+				ft_printf.c \
+				ft_printf_utils.c \
+				ft_printf_hex.c \
+				ft_printf_unsigned.c
 
 SRCSB 	= 		ft_lstnew.c \
 				ft_lstadd_front.c \
